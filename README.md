@@ -1,6 +1,6 @@
 # love2docs
 
-A Python tool that downloads Love2D (L�VE) game engine documentation from the official wiki and converts it to plain text format, creating snapshots of the docs that can be provided as context for LLMs.
+A Python tool that downloads Love2D (LÖVE) game engine documentation from the official wiki and converts it to plain text format, creating snapshots of the docs that can be provided as context for LLMs.
 
 ## Purpose
 
@@ -45,7 +45,7 @@ uv run main.py --help
 - All Love2D API functions (love.* namespace)
 - Tutorial: Callback Functions
 - Getting Started guide
-- Building L�VE guide
+- Building LÖVE guide
 - Game Distribution guide  
 - Config Files documentation
 - English-only content (filters out 20+ other languages)
