@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-love2doc is a Python tool that downloads Love2D (LÖVE) game engine documentation from the official wiki (love2d.org/wiki) and converts it to plain text format suitable for feeding to LLMs. The tool targets the Love2D API documentation under the "love" namespace plus key tutorial and documentation pages.
+love2docs is a Python tool that downloads Love2D (LÖVE) game engine documentation from the official wiki (love2d.org/wiki) and converts it to plain text format suitable for feeding to LLMs. The tool targets the Love2D API documentation under the "love" namespace plus key tutorial and documentation pages.
 
 ## Environment and Dependencies
 
