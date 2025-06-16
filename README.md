@@ -2,8 +2,6 @@
 
 A Python tool that downloads Love2D (LÖVE) game engine documentation from the official wiki and converts it to plain text format, creating snapshots of the docs that can be provided as context for LLMs.
 
-## Purpose
-
 This tool snapshots the Love2D documentation into plain text so that it can be provided as context for Large Language Models (LLMs). The generated text files contain the complete Love2D API documentation plus key tutorial pages in a format optimized for AI consumption.
 
 ## Pre-generated Files
