@@ -1,12 +1,12 @@
 # love2docs
 
-A Python tool that downloads Love2D (LÖVE) game engine documentation from the official wiki and converts it to plain text format, creating snapshots of the docs that can be provided as context for LLMs.
+A Python tool that downloads [Love2D (LÖVE)](https://love2d.org) game engine documentation from the official [wiki](https://love2d.org/wiki/Main_Page) and converts it to plain text format, creating snapshots of the docs that can be provided as context for LLMs.
 
-This tool snapshots the Love2D documentation into plain text so that it can be provided as context for Large Language Models (LLMs). The generated text files contain the complete Love2D API documentation plus key tutorial pages in a format optimized for AI consumption.
+This tool snapshots the Love2D documentation into plain text so that it can be provided as context for Large Language Models (LLMs). The generated text files contain the complete Love2D [API documentation](https://love2d.org/wiki/love) plus key resources mentioned in the [main page](https://love2d.org/wiki/Main_Page) in a format optimized for AI consumption.
 
 ## Pre-generated Files
 
-Instead of running the script yourself, you can download pre-generated documentation files from the [Releases page](https://github.com/xukai92/love2docs/releases). These files are automatically generated and updated when new releases are tagged.
+Instead of running the script yourself, you can download pre-generated documentation files (`love2d_docs-REPO_RELEASE.txt`) from the [Releases page](https://github.com/xukai92/love2docs/releases). These files are automatically generated and updated when new releases are tagged.
 
 ## Usage
 
