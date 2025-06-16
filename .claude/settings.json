@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:love2d.org)"
+    ],
+    "deny": []
+  }
+}
