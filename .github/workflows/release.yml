@@ -30,12 +30,18 @@ jobs:
         run: uv run main.py --output love2d_docs-${{ github.ref_name }}.txt
         
       - name: Generate Love2D documentation (individual pages)
-        run: uv run main.py --save-each --output love2d_docs_pages-${{ github.ref_name }}
+        run: uv run main.py --save-each --output love2d_docs_pages-${{ github.ref_name }}.txt
+        
+      - name: List files for debugging
+        run: ls -la
         
       - name: Create zip archive of individual pages
         run: |
-          cd love2d_docs_pages-${{ github.ref_name }}
-          zip -r ../love2d_docs_pages-${{ github.ref_name }}.zip .
+          FOLDER_NAME="love2d_docs_pages-${{ github.ref_name }}"
+          echo "Looking for folder: $FOLDER_NAME"
+          ls -la "$FOLDER_NAME"
+          cd "$FOLDER_NAME"
+          zip -r "../love2d_docs_pages-${{ github.ref_name }}.zip" .
           cd ..
         
       - name: Upload documentation files to release
