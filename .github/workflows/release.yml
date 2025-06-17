@@ -26,11 +26,21 @@ jobs:
       - name: Install dependencies
         run: uv sync
         
-      - name: Generate Love2D documentation
+      - name: Generate Love2D documentation (concatenated)
         run: uv run main.py --output love2d_docs-${{ github.ref_name }}.txt
         
-      - name: Upload documentation to release
+      - name: Generate Love2D documentation (individual pages)
+        run: uv run main.py --save-each --output love2d_docs_pages-${{ github.ref_name }}
+        
+      - name: Create zip archive of individual pages
+        run: |
+          cd love2d_docs_pages-${{ github.ref_name }}
+          zip -r ../love2d_docs_pages-${{ github.ref_name }}.zip .
+          cd ..
+        
+      - name: Upload documentation files to release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release upload ${{ github.ref_name }} love2d_docs-${{ github.ref_name }}.txt --clobber
+          gh release upload ${{ github.ref_name }} love2d_docs_pages-${{ github.ref_name }}.zip --clobber

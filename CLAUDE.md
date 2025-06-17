@@ -43,6 +43,12 @@ uv run main.py -c 16
 # Run with custom output file
 uv run main.py -o custom_output.txt
 
+# Save each page as individual files in a folder
+uv run main.py --save-each
+
+# Save each page individually with custom folder name
+uv run main.py --save-each -o my_docs
+
 # Test MediaWiki API connectivity and response format
 uv run python test_api.py
 

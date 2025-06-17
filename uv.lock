@@ -278,7 +278,7 @@ wheels = [
 ]
 
 [[package]]
-name = "love2doc"
+name = "love2docs"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

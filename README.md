@@ -6,7 +6,10 @@ This tool snapshots the Love2D documentation into plain text so that it can be p
 
 ## Pre-generated Files
 
-Instead of running the script yourself, you can download pre-generated documentation files (`love2d_docs-REPO_RELEASE.txt`) from the [Releases page](https://github.com/xukai92/love2docs/releases). These files are automatically generated and updated when new releases are tagged.
+Instead of running the script yourself, you can download pre-generated documentation files from the [Releases page](https://github.com/xukai92/love2docs/releases). These files are automatically generated and updated when new releases are tagged:
+
+- **`love2d_docs-[version].txt`** - All pages concatenated in a single text file
+- **`love2d_docs_pages-[version].zip`** - Individual page files in a zip archive
 
 ## Usage
 
